@@ -5,12 +5,6 @@ body{
     margin: 0;
 }
 
-@media (max-width:600px){
-    .columns{
-        flex-direction: column;
-    }
-}
-
 img{
     max-width: 100%;
 }
@@ -48,6 +42,12 @@ p{
     margin: 1em 0;
 }
 
+@media (max-width:600px){
+    .columns{
+        flex-direction: column;
+    }
+}
+
 .col-1{
     width: 20%;
 }
@@ -60,14 +60,15 @@ p{
     width: 70%;
 }
 
+@media (max-width:600px){
+    .col-1,.col-2,.col-3 {
+        width: 90%;
+    }
+}
+
 .col-bg{
     background:#3E8989;
     color: aliceblue;
     padding: .75em;
 }
 
-@media (max-width:600px){
-    .col-1,.col-2,.col-3 {
-        width: 90%;
-    }
-}
