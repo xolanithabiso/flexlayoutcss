@@ -6,8 +6,8 @@ body{
 }
 
 @media (max-width:600px){
-    body{
-        background: #90FFDC;
+    .columns{
+        flex-direction: column;
     }
 }
 
@@ -63,5 +63,11 @@ p{
 .col-bg{
     background:#3E8989;
     color: aliceblue;
-    padding: 1em;
+    padding: .75em;
+}
+
+@media (max-width:600px){
+    .col-1,.col-2,.col-3 {
+        width: 90%;
+    }
 }
